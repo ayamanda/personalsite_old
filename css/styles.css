@@ -119,25 +119,74 @@ a:hover{
  margin-left:30px;
 }
 
-
-.btn{
-   -webkit-border-radius: 8px;
-   -moz-border-radius: 8px;
-   border-radius: 8px;
-   color: #FFFFFF;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 20px;
-   font-weight: 100;
-   padding: 16px;
-   background-color: #11999E;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
-   text-align: center;
+.project-card {
+  width: 25%;  /* Adjust the width as needed */
+  margin: 20px 2.5%;  /* Added some margin between the cards */
+  padding: 20px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: inline-block;  /* Display the cards inline */
+  overflow: hidden; 
+  box-sizing: border-box;  /* Include padding and border in the total width */
 }
 
+.project-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.project-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: normal; /* Show the whole description by default */
+  overflow: hidden;
+  height: 70px; /* Set a fixed height for the description */
+  text-overflow: ellipsis; /* Show three dots (...) for overflow text */
+}
+
+.project-card .read-more-btn {
+  position: absolute;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #11999E;
+  color: #FFFFFF;
+  padding: 10px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: none; /* Hide the button by default */
+}
+
+.project-card:hover p {
+  height: auto; /* Allow the description to expand to show full content on hover */
+  overflow: visible;
+  text-overflow: initial;
+}
+
+.project-card:hover .read-more-btn {
+  display: inline-block; /* Show the button on hover */
+}
+
+
+.btn {
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 14px 24px; /* Adjusted padding for a more balanced look */
+  background-color: #11999E;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Added a smooth transition effect */
+}
 .btn:hover {
-   background: #00FFFF;
+   background: #0e7c7f;
    border: solid #00FFFF 1px;
    -webkit-border-radius: 10px;
    -moz-border-radius: 10px;
