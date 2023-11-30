@@ -1,4 +1,5 @@
 body {
+  background-color: #EAF6F6;
   color: #40514E;
   margin: 0;
   text-align: center;
@@ -29,7 +30,7 @@ p{
 }
 
 hr{
-  border: dotted #EAF6F6 6px;
+  border: dotted #63d3d3 6px;
   border-bottom: none;
   width: 5%;
   margin: 100px auto;
@@ -44,6 +45,10 @@ a{
 
 a:hover{
   color: #EAF6F6;
+}
+
+.footer-link{
+  color: #0d00ff77;
 }
 
 .top-container {
